@@ -1,0 +1,21 @@
+# Betriebssystem
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editoren
+.idea/
+.vscode/
+*.swp
+
+# Umgebungsdateien und Schlüssel
+.env
+.env.*
+*.pem
+*.key
+*.p12
+id_rsa
+id_ed25519
+
+# Protokolle
+*.log

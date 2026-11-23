@@ -1,0 +1,158 @@
+:root {
+  --bg: #030303;
+  --accent: #39ff65;
+  --accent-soft: #75ff91;
+  --accent-deep: #176b31;
+  --text: #f3f3f3;
+  --muted: #c4c4c4;
+  --line: #176b31;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--bg);
+  color: var(--text);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.skip {
+  position: absolute;
+  left: 0.75rem;
+  top: 0.75rem;
+  padding: 0.4rem 0.7rem;
+  background: var(--bg);
+  color: var(--accent-soft);
+  transform: translateY(-150%);
+}
+
+.skip:focus {
+  transform: none;
+}
+
+a {
+  color: var(--accent-soft);
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+a:focus-visible,
+.skip:focus-visible {
+  outline: 2px solid var(--accent-soft);
+  outline-offset: 3px;
+}
+
+.frame {
+  width: min(42rem, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 2.5rem 0 3rem;
+}
+
+.site-header,
+.panel,
+.site-footer {
+  border: 1px solid var(--line);
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.9rem 1.1rem;
+}
+
+.mark {
+  width: 2.5rem;
+  height: 2.5rem;
+  flex: 0 0 auto;
+}
+
+.word {
+  margin: 0;
+  font-size: 0.95rem;
+  letter-spacing: 0.16em;
+  color: var(--accent);
+}
+
+.panel {
+  margin-top: 1rem;
+  padding: 1.5rem 1.25rem 1.6rem;
+}
+
+h1 {
+  margin: 0 0 0.6rem;
+  font-size: clamp(2rem, 8vw, 3.1rem);
+  line-height: 1.05;
+  font-weight: 650;
+  letter-spacing: 0.04em;
+}
+
+.lead,
+.note,
+.site-footer p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.note {
+  margin-top: 1rem;
+}
+
+.status {
+  display: inline-block;
+  margin: 1.35rem 0 0;
+  padding: 0.35rem 0.7rem;
+  border: 1px solid var(--accent-deep);
+  color: var(--accent);
+  font-size: 0.95rem;
+}
+
+.links {
+  margin: 1.35rem 0 0;
+}
+
+.links a {
+  overflow-wrap: anywhere;
+}
+
+.site-footer {
+  margin-top: 1rem;
+  padding: 0.9rem 1.1rem;
+}
+
+.site-footer a {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 36rem) {
+  .frame {
+    width: min(42rem, calc(100% - 1.25rem));
+    padding-top: 1.25rem;
+  }
+
+  .site-header,
+  .panel,
+  .site-footer {
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+  }
+
+  .word {
+    letter-spacing: 0.1em;
+  }
+}
