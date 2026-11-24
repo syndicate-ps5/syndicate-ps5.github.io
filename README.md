@@ -12,7 +12,7 @@ Die sechs Kachelseiten sind `research.html`, `projects.html`, `development.html`
 
 Drei weitere Seiten bleiben erhalten und sind vom Dashboard aus verlinkt. `updates.html` ist Aktuelles. `about.html` ist Über uns. `technology.html` ist die ausführliche technische Beschreibung und von System aus erreichbar.
 
-`search.html` durchsucht nur diese vorhandenen öffentlichen Seiten. Die Einstellungen speichern auf dem Gerät die Sprache und, ob die Hintergrundzeichen am Eingang sichtbar sind.
+`search.html` durchsucht Seitentitel und hinterlegte Kurzbeschreibungen. Sie durchsucht nicht den vollständigen Seiteninhalt. Die Einstellungen speichern auf dem Gerät die Sprache und, ob die Hintergrundzeichen am Eingang sichtbar sind.
 
 ## Dateien
 
