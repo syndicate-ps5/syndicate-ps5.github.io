@@ -22,6 +22,12 @@
     var titleDe = document.documentElement.getAttribute("data-title-de");
     var titleEn = document.documentElement.getAttribute("data-title-en");
     if (titleDe && titleEn) document.title = (choice === "en" ? titleEn : titleDe) + " – SYNDICATE";
+    var meta = document.querySelector('meta[name="description"]');
+    if (meta) {
+      var descriptionDe = meta.getAttribute("data-description-de");
+      var descriptionEn = meta.getAttribute("data-description-en");
+      if (descriptionDe && descriptionEn) meta.setAttribute("content", choice === "en" ? descriptionEn : descriptionDe);
+    }
     var nav = document.getElementById("nav");
     if (nav) nav.setAttribute("aria-label", labels[choice].nav);
     var foot = document.getElementById("footnav");

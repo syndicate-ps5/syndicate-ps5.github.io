@@ -4,13 +4,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Forschung – SYNDICATE</title>
-    <meta name="description" content="Öffentliche PS5-Forschung der SYNDICATE Research Division. Nur belegte Angaben.">
+    <meta name="description" content="Öffentliche PS5-Forschung der SYNDICATE Research Division. Nur belegte Angaben." data-description-de="Öffentliche PS5-Forschung der SYNDICATE Research Division. Nur belegte Angaben." data-description-en="Public PS5 research of the SYNDICATE Research Division. Sourced statements only.">
     <link rel="icon" href="assets/img/mark.svg" type="image/svg+xml">
     <link rel="stylesheet" href="assets/css/style.css">
     <script>
       try {
         var stored = localStorage.getItem("syndicate-lang");
-        if (stored === "en" || stored === "de") document.documentElement.lang = stored;
+        if (stored === "en" || stored === "de") {
+          document.documentElement.lang = stored;
+          var earlyMeta = document.querySelector('meta[name="description"]');
+          if (earlyMeta) {
+            var earlyText = earlyMeta.getAttribute(stored === "en" ? "data-description-en" : "data-description-de");
+            if (earlyText) earlyMeta.setAttribute("content", earlyText);
+          }
+        }
       } catch (error) {}
     </script>
   </head>
