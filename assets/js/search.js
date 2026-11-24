@@ -10,7 +10,11 @@
     { href: "about.html", de: "Über uns", en: "About", textDe: "Research Division. Veröffentlichung erst nach Quellenprüfung, Bewertung der Beleglage und Freigabe.", textEn: "Research Division. Publication only after a source check, an evidence assessment and approval." },
     { href: "updates.html", de: "Aktuelles", en: "Updates", textDe: "23. November 2026 Modellgruppen. 24. November 2026 Dashboard auf main veröffentlicht.", textEn: "23 November 2026 model groups. 24 November 2026 dashboard published on main." },
     { href: "dashboard.html", de: "Home", en: "Home", textDe: "Dashboard mit Forschung, Projekten, Entwicklung, Homebrew-Store, System und Einstellungen.", textEn: "Dashboard with research, projects, development, Homebrew Store, system and settings." },
-    { href: "index.html", de: "Eingang", en: "Entry", textDe: "SYNDICATE, danach Jailbreak als Platzhalter ohne Funktion, danach Home.", textEn: "SYNDICATE, then Jailbreak as a placeholder with no function, then Home." }
+    { href: "index.html", de: "Eingang", en: "Entry", textDe: "SYNDICATE, danach Jailbreak als Platzhalter ohne Funktion, danach Home.", textEn: "SYNDICATE, then Jailbreak as a placeholder with no function, then Home." },
+    { href: "research-center.html", de: "Research Center", en: "Research Center", textDe: "Modellübersicht, Firmware-Übersicht, Kompatibilitätsmatrix, Quellen und Berichte.", textEn: "Model overview, firmware overview, compatibility matrix, sources and reports." },
+    { href: "firmware.html", de: "Firmware-Übersicht", en: "Firmware overview", textDe: "Keine Firmware-Einträge. Status Unknown.", textEn: "No firmware entries. Status Unknown." },
+    { href: "developer.html", de: "Developer Center", en: "Developer Center", textDe: "Dokumentation und JSON-Prüfung im Browser. Kein Konsolenzugriff.", textEn: "Documentation and in-browser JSON checking. No console access." },
+    { href: "json-check.html", de: "JSON-Prüfer", en: "JSON checker", textDe: "Prüft das Format eines Datensatzes lokal. Nichts wird gesendet.", textEn: "Checks a dataset format locally. Nothing is sent." }
   ];
 
   var form = document.querySelector(".search-form");

@@ -6,7 +6,7 @@ Dieses Repository enthält die öffentliche, statische Website der SYNDICATE Res
 
 ## Seiten
 
-`index.html` ist der Eingang: SYNDICATE, darunter Jailbreak ohne Funktion, darunter Home. Home öffnet `dashboard.html` mit den Kacheln Forschung, Projekte, Entwicklung, Homebrew-Store, System und Einstellungen. Die bisherigen Seiten zu Forschung, Projekten, Technik, Über uns und Aktuelles bleiben erhalten und sind aus dem Dashboard erreichbar.
+`index.html` ist der Eingang: SYNDICATE, darunter Jailbreak ohne Funktion, darunter Home. Das Research Center und das Developer Center ergänzen das Dashboard. Lab-Werkzeuge sind nicht angebunden. Die Firmware-Seite enthält keine Einträge. Home öffnet `dashboard.html` mit den Kacheln Forschung, Projekte, Entwicklung, Homebrew-Store, System und Einstellungen. Die bisherigen Seiten zu Forschung, Projekten, Technik, Über uns und Aktuelles bleiben erhalten und sind aus dem Dashboard erreichbar.
 
 Deutsch und Englisch stehen in jeder Seite. Ohne gespeicherte Wahl bleibt Deutsch sichtbar. Die Wahl liegt lokal im Browser.
 
