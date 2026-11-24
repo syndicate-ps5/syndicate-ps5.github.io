@@ -2,7 +2,7 @@
 
 Öffentliche Website der SYNDICATE Research Division. Diese Branch enthält die Dashboard-Fassung zur Prüfung. `main` bleibt die veröffentlichte Website, bis diese Fassung freigegeben wird.
 
-Es gibt zwölf HTML-Seiten. Sie haben vier Rollen.
+Es gibt zweiundzwanzig HTML-Seiten. Der Eingang, das Dashboard, die sechs Kachelseiten, Technik, Über uns, Aktuelles und die Suche bleiben. Dazu kommen das Research Center und das Developer Center.
 
 Der Eingang ist `index.html`. Oben steht SYNDICATE. Darunter steht Jailbreak als Schaltfläche ohne Ziel und ohne Funktion. Darunter steht Home und öffnet `dashboard.html`.
 
@@ -16,28 +16,9 @@ Drei weitere Seiten bleiben erhalten und sind vom Dashboard aus verlinkt. `updat
 
 ## Dateien
 
-```text
-index.html
-dashboard.html
-research.html
-projects.html
-development.html
-homebrew.html
-system.html
-settings.html
-technology.html
-about.html
-updates.html
-search.html
-assets/css/style.css
-assets/js/site.js
-assets/js/search.js
-assets/img/mark.svg
-docs/website.md
-README.md
-.gitignore
-.nojekyll
-```
+Die HTML-Seiten sind `index.html`, `dashboard.html`, `research.html`, `projects.html`, `development.html`, `homebrew.html`, `system.html`, `settings.html`, `technology.html`, `about.html`, `updates.html`, `search.html`, `research-center.html`, `models.html`, `firmware.html`, `compatibility.html`, `sources.html`, `reports.html`, `developer.html`, `developer-docs.html`, `json-check.html` und `test-notes.html`.
+
+Die Skripte sind `assets/js/site.js`, `assets/js/search.js` und `assets/js/json-check.js`. Die Gestaltung liegt in `assets/css/style.css`, das Zeichen in `assets/img/mark.svg`. Dokumentation und Grenzen stehen in [docs/website.md](docs/website.md).
 
 Deutsch ist die Ausgangssprache. Englisch, einschließlich der Meta-Beschreibung, schaltet `assets/js/site.js` um. Jailbreak führt nirgendwohin. Der Homebrew-Store ist geplant und enthält keine Downloads. Weitere Forschungsphasen sind nicht begonnen.
 
