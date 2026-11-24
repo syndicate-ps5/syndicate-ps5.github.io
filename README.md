@@ -1,28 +1,24 @@
 # SYNDICATE
 
-Öffentliche Website der SYNDICATE Research Division. Diese Branch enthält die Dashboard-Fassung zur Prüfung. `main` bleibt die veröffentlichte Website, bis diese Fassung freigegeben wird.
+Öffentliche Website der SYNDICATE Research Division. Diese Branch enthält die Fassung mit Research Center und Developer Center zur Prüfung. `main` bleibt die veröffentlichte Website, bis diese Fassung freigegeben wird.
 
-Es gibt zweiundzwanzig HTML-Seiten. Der Eingang, das Dashboard, die sechs Kachelseiten, Technik, Über uns, Aktuelles und die Suche bleiben. Dazu kommen das Research Center und das Developer Center.
+Es gibt 22 HTML-Seiten in vier Bereichen.
 
-Der Eingang ist `index.html`. Oben steht SYNDICATE. Darunter steht Jailbreak als Schaltfläche ohne Ziel und ohne Funktion. Darunter steht Home und öffnet `dashboard.html`.
+Der erste Bereich ist Eingang und Dashboard. `index.html` zeigt oben SYNDICATE, darunter Jailbreak ohne Funktion und darunter Home. Home öffnet `dashboard.html`.
 
-Das Dashboard ist `dashboard.html`. Es zeigt sechs Kacheln in dieser Reihenfolge: Forschung, Projekte, Entwicklung, Homebrew-Store, System und Einstellungen. Dieselben sechs Ziele stehen auch in der Seitenleiste, unter dem Platzhalter Jailbreak und unter Home.
+Der zweite Bereich sind die bestehenden Seiten. Die sechs Kachelseiten sind `research.html`, `projects.html`, `development.html`, `homebrew.html`, `system.html` und `settings.html`. Dazu bleiben `technology.html`, `about.html`, `updates.html` und `search.html`. Die Suche durchsucht Seitentitel und hinterlegte Kurzbeschreibungen. Sie durchsucht nicht den vollständigen Seiteninhalt.
 
-Die sechs Kachelseiten sind `research.html`, `projects.html`, `development.html`, `homebrew.html`, `system.html` und `settings.html`.
+Der dritte Bereich ist das Research Center. `research-center.html` führt zu `models.html`, `firmware.html`, `compatibility.html`, `sources.html` und `reports.html`. Die Firmware-Seite enthält keine Einträge.
 
-Drei weitere Seiten bleiben erhalten und sind vom Dashboard aus verlinkt. `updates.html` ist Aktuelles. `about.html` ist Über uns. `technology.html` ist die ausführliche technische Beschreibung und von System aus erreichbar.
-
-`search.html` durchsucht Seitentitel und hinterlegte Kurzbeschreibungen. Sie durchsucht nicht den vollständigen Seiteninhalt. Die Einstellungen speichern auf dem Gerät die Sprache und, ob die Hintergrundzeichen am Eingang sichtbar sind.
+Der vierte Bereich ist das Developer Center. `developer.html` führt zu `developer-docs.html`, `json-check.html` und `test-notes.html`. Der JSON-Prüfer arbeitet nur im Browser und überträgt keine Daten.
 
 ## Dateien
 
-Die HTML-Seiten sind `index.html`, `dashboard.html`, `research.html`, `projects.html`, `development.html`, `homebrew.html`, `system.html`, `settings.html`, `technology.html`, `about.html`, `updates.html`, `search.html`, `research-center.html`, `models.html`, `firmware.html`, `compatibility.html`, `sources.html`, `reports.html`, `developer.html`, `developer-docs.html`, `json-check.html` und `test-notes.html`.
+Die 22 HTML-Seiten sind `index.html`, `dashboard.html`, `research.html`, `projects.html`, `development.html`, `homebrew.html`, `system.html`, `settings.html`, `technology.html`, `about.html`, `updates.html`, `search.html`, `research-center.html`, `models.html`, `firmware.html`, `compatibility.html`, `sources.html`, `reports.html`, `developer.html`, `developer-docs.html`, `json-check.html` und `test-notes.html`.
 
 Die Skripte sind `assets/js/site.js`, `assets/js/search.js` und `assets/js/json-check.js`. Die Gestaltung liegt in `assets/css/style.css`, das Zeichen in `assets/img/mark.svg`. Dokumentation und Grenzen stehen in [docs/website.md](docs/website.md).
 
 Deutsch ist die Ausgangssprache. Englisch, einschließlich der Meta-Beschreibung, schaltet `assets/js/site.js` um. Jailbreak führt nirgendwohin. Der Homebrew-Store ist geplant und enthält keine Downloads. Weitere Forschungsphasen sind nicht begonnen.
-
-Farben und Grenzen stehen in [docs/website.md](docs/website.md).
 
 ## Lokal ansehen
 
