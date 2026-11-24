@@ -127,7 +127,7 @@ h1 {
 }
 
 .links a {
-  overflow-wrap: anywhere;
+  overflow-wrap: normal;
 }
 
 .site-footer {
@@ -135,8 +135,12 @@ h1 {
   padding: 0.9rem 1.1rem;
 }
 
+.repo-part {
+  white-space: nowrap;
+}
+
 .site-footer a {
-  overflow-wrap: anywhere;
+  overflow-wrap: normal;
 }
 
 @media (max-width: 36rem) {
