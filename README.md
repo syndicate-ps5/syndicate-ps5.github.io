@@ -2,7 +2,7 @@
 
 Öffentliche Website der SYNDICATE Research Division. Diese Branch enthält die Dashboard-Fassung zur Prüfung. `main` bleibt die veröffentlichte Website, bis diese Fassung freigegeben wird.
 
-Es gibt elf HTML-Seiten. Sie haben drei Rollen.
+Es gibt zwölf HTML-Seiten. Sie haben vier Rollen.
 
 Der Eingang ist `index.html`. Oben steht SYNDICATE. Darunter steht Jailbreak als Schaltfläche ohne Ziel und ohne Funktion. Darunter steht Home und öffnet `dashboard.html`.
 
@@ -11,6 +11,8 @@ Das Dashboard ist `dashboard.html`. Es zeigt sechs Kacheln in dieser Reihenfolge
 Die sechs Kachelseiten sind `research.html`, `projects.html`, `development.html`, `homebrew.html`, `system.html` und `settings.html`.
 
 Drei weitere Seiten bleiben erhalten und sind vom Dashboard aus verlinkt. `updates.html` ist Aktuelles. `about.html` ist Über uns. `technology.html` ist die ausführliche technische Beschreibung und von System aus erreichbar.
+
+`search.html` durchsucht Seitentitel und hinterlegte Kurzbeschreibungen. Sie durchsucht nicht den vollständigen Seiteninhalt. Die Einstellungen speichern auf dem Gerät die Sprache und, ob die Hintergrundzeichen am Eingang sichtbar sind.
 
 ## Dateien
 
@@ -26,8 +28,10 @@ settings.html
 technology.html
 about.html
 updates.html
+search.html
 assets/css/style.css
 assets/js/site.js
+assets/js/search.js
 assets/img/mark.svg
 docs/website.md
 README.md

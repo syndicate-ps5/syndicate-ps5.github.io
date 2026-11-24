@@ -18,6 +18,7 @@
             if (earlyText) earlyMeta.setAttribute("content", earlyText);
           }
         }
+        if (localStorage.getItem("syndicate-rain") === "off") document.documentElement.classList.add("rain-off");
       } catch (error) {}
     </script>
   </head>
@@ -28,7 +29,7 @@
       <h1 class="gate-title">SYNDICATE</h1>
       <p class="gate-sub">Research Division</p>
       <div id="gate-nav" class="gate-menu" role="navigation" data-label-de="Eingang" data-label-en="Entry">
-        <button class="gate-btn" type="button" aria-disabled="true"><span data-lang="de">Jailbreak</span><span data-lang="en">Jailbreak</span></button>
+        <button class="gate-btn" type="button" disabled aria-disabled="true"><span data-lang="de">Jailbreak</span><span data-lang="en">Jailbreak</span></button>
         <p class="gate-note"><span data-lang="de">Platzhalter ohne Funktion.</span><span data-lang="en">Placeholder with no function.</span></p>
         <a class="gate-btn" href="dashboard.html"><span data-lang="de">Home</span><span data-lang="en">Home</span></a>
       </div>
