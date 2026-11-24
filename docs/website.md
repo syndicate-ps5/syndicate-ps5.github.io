@@ -2,54 +2,28 @@
 
 ## Zweck
 
-Dieses Repository enthält die öffentliche, statische Website von SYNDICATE. Sie ist eine Projektseite für ein Forschungs- und Dokumentationsprojekt. GitHub Pages liefert die Dateien aus dem Branch `main` ohne eigenen Build-Schritt aus.
+Dieses Repository enthält die öffentliche, statische Website der SYNDICATE Research Division. GitHub Pages liefert den Branch `main` ohne eigenen Build-Schritt aus. Die mehrseitige Fassung liegt zur Prüfung vor und ersetzt `main` erst nach Freigabe.
 
-## Umfang von Phase 1
+## Seiten
 
-Die Startseite nennt den Projektnamen, eine kurze Beschreibung, den Status **In Aufbau (Phase 1)** und einen Link auf das öffentliche Forschungsrepository:
+Start stellt das Projekt vor. Forschung nennt die veröffentlichte Phase 1 und die belegte Modellgruppen-Notiz. Projekte zeigt den öffentlichen Status der vorhandenen Bereiche und kennzeichnet leere Bereiche als geplant. Technik beschreibt nur diese Website. Über uns nennt die Research Division, die Trennung von öffentlicher Forschung und interner Entwicklung und die Veröffentlichungsregel. Aktuelles führt die öffentlichen Schritte auf.
 
-<https://github.com/syndicate-ps5/syndicate-research>
-
-## Dateien
-
-| Pfad | Rolle |
-| --- | --- |
-| `index.html` | Startseite |
-| `assets/css/style.css` | Gestaltung, nur lokale Datei |
-| `assets/img/mark.svg` | Eigenes Zeichen, keine Fremdmarke |
-| `docs/website.md` | Diese Dokumentation |
-| `README.md` | Kurze Repository-Beschreibung |
-| `.gitignore` | Schließt lokale und geheime Dateien aus |
-| `.nojekyll` | Unterbindet die Jekyll-Verarbeitung |
+Deutsch und Englisch stehen in jeder Seite. Ohne gespeicherte Wahl bleibt Deutsch sichtbar. Die Wahl liegt lokal im Browser.
 
 ## Gestaltung
 
-Die Farben stammen aus der Projektvorgabe:
-
-| Rolle | Wert |
-| --- | --- |
-| Hintergrund | `#030303` |
-| Akzent | `#39FF65` |
-| Helles Grün | `#75FF91` |
-| Dunkles Grün | `#176B31` |
-| Schrift | Weiß und Hellgrau |
-
-Die Schrift kommt vom System. Es werden keine externen Schriften, Skripte, Tracker oder CDNs eingebunden. Das Layout bleibt eine einzelne Spalte und passt sich schmalen und breiten Ansichtsfenstern an.
+Hintergrund `#030303`, Neon-Grün `#39FF65`, Hellgrün `#75FF91`, Dunkelgrün `#176B31`, Schrift weiß und hellgrau. Die Schrift kommt vom System. Fallende Zeichen liegen hinter den Flächen, sind dekorativ und entfallen bei reduzierter Bewegung. Es gibt keine externen Schriften, Tracker oder CDNs.
 
 ## Inhaltliche Grenzen
 
-Die öffentliche Seite enthält in dieser Phase keine Downloads, keine Veröffentlichungen, keine Produktzusagen, keine Ankündigung einzelner Funktionen und keine Sicherheitsaussagen. Private Repositorys werden nicht verlinkt. Das Zeichen unter `assets/img/` ist eine eigene Grafik.
+Verwendet wird der Stand von `syndicate-research` auf `main`: Arbeitsregeln und die Modellgruppen CFI-1000, CFI-2000 und CFI-7000 aus der Sony-USB-Ports-Anleitung, abgerufen am 23. November 2026. Original, Slim und Pro bleiben Unknown. Firmware- und Architekturordner haben keine veröffentlichten Aussagen. Private Repository-Namen und interne Daten werden nicht angezeigt. Die Website enthält keine Downloads und keine Releases.
 
-## Lokale Ansicht
+## Lokal ansehen
 
-`index.html` kann direkt geöffnet werden. Für eine Prüfung über HTTP im Repository-Root:
+Im Repository-Root:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Danach ist die Seite unter `http://127.0.0.1:8000/` erreichbar.
-
-## GitHub Pages
-
-Für ein Repository mit dem Namen `syndicate-ps5.github.io` veröffentlicht GitHub Pages den Branch `main` unter <https://syndicate-ps5.github.io>, sofern Pages für diesen Branch eingeschaltet ist. Ob die Veröffentlichung aktiv ist, wird am Repository geprüft und nicht von dieser Dokumentation umgestellt.
+Die Startseite liegt unter `http://127.0.0.1:8000/`.
