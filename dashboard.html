@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="de" data-title-de="Home" data-title-en="Home">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home – SYNDICATE</title>
+    <meta name="description" content="Zentrales Dashboard der SYNDICATE Research Division." data-description-de="Zentrales Dashboard der SYNDICATE Research Division." data-description-en="Central dashboard of the SYNDICATE Research Division.">
+    <link rel="icon" href="assets/img/mark.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+      try {
+        var stored = localStorage.getItem("syndicate-lang");
+        if (stored === "en" || stored === "de") {
+          document.documentElement.lang = stored;
+          var earlyMeta = document.querySelector('meta[name="description"]');
+          if (earlyMeta) {
+            var earlyText = earlyMeta.getAttribute(stored === "en" ? "data-description-en" : "data-description-de");
+            if (earlyText) earlyMeta.setAttribute("content", earlyText);
+          }
+        }
+      } catch (error) {}
+    </script>
+  </head>
+  <body class="dash">
+    <a class="skip" href="#inhalt"><span data-lang="de">Zum Inhalt</span><span data-lang="en">Skip to content</span></a>
+    <div class="shell">
+      <aside class="side" id="nav">
+        <a class="side-brand" href="index.html">
+          <img class="mark" src="assets/img/mark.svg" width="36" height="36" alt="">
+          <span><strong>SYNDICATE</strong><span>Research Division</span></span>
+        </a>
+        <div>
+          <h2><span data-lang="de">Hauptmenü</span><span data-lang="en">Main menu</span></h2>
+          <button class="nav-placeholder" type="button" aria-disabled="true"><i class="mark-dot"></i><span data-lang="de">Jailbreak</span><span data-lang="en">Jailbreak</span></button>
+          <a href="dashboard.html" aria-current="page"><i class="mark-dot"></i>Home</a>
+          <a href="research.html"><i class="mark-dot"></i><span data-lang="de">Forschung</span><span data-lang="en">Research</span></a>
+          <a href="projects.html"><i class="mark-dot"></i><span data-lang="de">Projekte</span><span data-lang="en">Projects</span></a>
+          <a href="development.html"><i class="mark-dot"></i><span data-lang="de">Entwicklung</span><span data-lang="en">Development</span></a>
+        </div>
+        <div>
+          <h2><span data-lang="de">Weitere</span><span data-lang="en">Other</span></h2>
+          <a href="homebrew.html"><i class="mark-dot"></i>Homebrew Store</a>
+          <a href="system.html"><i class="mark-dot"></i>System</a>
+          <a href="settings.html"><i class="mark-dot"></i><span data-lang="de">Einstellungen</span><span data-lang="en">Settings</span></a>
+        </div>
+        <div>
+          <h2><span data-lang="de">Hilfe</span><span data-lang="en">Help</span></h2>
+          <a href="about.html"><i class="mark-dot"></i><span data-lang="de">Über uns</span><span data-lang="en">About</span></a>
+          <a href="updates.html"><i class="mark-dot"></i><span data-lang="de">Aktuelles</span><span data-lang="en">Updates</span></a>
+        </div>
+        <div class="langs" role="group">
+          <button class="lang" type="button" data-set-lang="de">DE</button>
+          <button class="lang" type="button" data-set-lang="en">EN</button>
+        </div>
+      </aside>
+      <main class="stage" id="inhalt">
+        <div class="dhead">
+          <button class="menu dash-menu" type="button" aria-expanded="false" aria-controls="nav"><span data-lang="de">Menü</span><span data-lang="en">Menu</span></button>
+          <span></span>
+        </div>
+        <section class="dash-top">
+          <article class="dcard hero">
+            <div>
+              <h2><span data-lang="de">Forschung</span><span data-lang="en">Research</span></h2>
+              <p>SYNDICATE Research Division</p>
+              <p><span data-lang="de">Phase 1 ist veröffentlicht: Arbeitsregeln und eine belegte Notiz zu drei Modellgruppen.</span><span data-lang="en">Phase 1 is published: working rules and one sourced note on three model groups.</span></p>
+              <a class="pill" href="research.html"><span data-lang="de">Öffnen</span><span data-lang="en">Open</span></a>
+            </div>
+            <img class="hero-mark" src="assets/img/mark.svg" width="120" height="120" alt="">
+          </article>
+          <article class="dcard">
+            <div class="dhead">
+              <h2><span data-lang="de">Aktuelles</span><span data-lang="en">Updates</span></h2>
+              <a href="updates.html"><span data-lang="de">Alle</span><span data-lang="en">See all</span></a>
+            </div>
+            <a class="uprow" href="updates.html"><i class="mark-dot"></i><span><span data-lang="de">Dashboard zur Prüfung</span><span data-lang="en">Dashboard in review</span></span><span class="badge"><span data-lang="de">Prüfung</span><span data-lang="en">Review</span></span></a>
+            <a class="uprow" href="updates.html"><i class="mark-dot"></i><span>CFI-1000 / 2000 / 7000</span><span class="badge solid"><span data-lang="de">Belegt</span><span data-lang="en">Sourced</span></span></a>
+            <a class="uprow" href="updates.html"><i class="mark-dot"></i><span><span data-lang="de">Einseitige Seite veröffentlicht</span><span data-lang="en">One-page site published</span></span><span class="badge"><span data-lang="de">Live</span><span data-lang="en">Live</span></span></a>
+          </article>
+        </section>
+        <section class="dash-mid">
+          <article class="dcard mini">
+            <div class="dhead"><h3><span data-lang="de">Projekte</span><span data-lang="en">Projects</span></h3><a href="projects.html"><span data-lang="de">Alle</span><span data-lang="en">See all</span></a></div>
+            <p><span data-lang="de">Vorhandene Bereiche und ihr öffentlicher Status.</span><span data-lang="en">Existing areas and their public status.</span></p>
+            <a class="pill" href="projects.html"><span data-lang="de">Öffnen</span><span data-lang="en">Open</span></a>
+          </article>
+          <article class="dcard mini">
+            <div class="dhead"><h3><span data-lang="de">Entwicklung</span><span data-lang="en">Development</span></h3><a href="development.html"><span data-lang="de">Alle</span><span data-lang="en">See all</span></a></div>
+            <p><span data-lang="de">Geplant. Weitere Phasen sind nicht begonnen.</span><span data-lang="en">Planned. Further phases have not started.</span></p>
+            <a class="pill" href="development.html"><span data-lang="de">Geplant</span><span data-lang="en">Planned</span></a>
+          </article>
+          <article class="dcard mini">
+            <div class="dhead"><h3>Homebrew Store</h3><a href="homebrew.html"><span data-lang="de">Alle</span><span data-lang="en">See all</span></a></div>
+            <p><span data-lang="de">Geplant. Keine Angebote und keine Downloads.</span><span data-lang="en">Planned. No listings and no downloads.</span></p>
+            <a class="pill" href="homebrew.html"><span data-lang="de">Geplant</span><span data-lang="en">Planned</span></a>
+          </article>
+        </section>
+        <section class="dash-bot">
+          <article class="dcard">
+            <div class="dhead"><h2><span data-lang="de">Belege</span><span data-lang="en">Evidence</span></h2><a href="research.html"><span data-lang="de">Alle</span><span data-lang="en">See all</span></a></div>
+            <a class="srcrow" href="research.html"><i class="mark-dot"></i><span>CFI-1000</span><span class="badge"><span data-lang="de">eigene Gruppe</span><span data-lang="en">own group</span></span></a>
+            <a class="srcrow" href="research.html"><i class="mark-dot"></i><span>CFI-2000</span><span class="badge">CFI-2000/7000</span></a>
+            <a class="srcrow" href="research.html"><i class="mark-dot"></i><span>CFI-7000</span><span class="badge">CFI-2000/7000</span></a>
+            <p><span data-lang="de">Original, Slim und Pro bleiben Unknown.</span><span data-lang="en">Original, Slim, and Pro remain Unknown.</span></p>
+          </article>
+          <article class="dcard">
+            <div class="dhead"><h2><span data-lang="de">Stand</span><span data-lang="en">Status</span></h2></div>
+            <div class="ring-wrap">
+              <div class="ring" role="img"><span>1</span></div>
+              <p><span data-lang="de">Eine belegte Quelle. Drei genannte Modellgruppen. Keine Firmware-Einträge.</span><span data-lang="en">One sourced record. Three named model groups. No firmware entries.</span></p>
+            </div>
+          </article>
+          <article class="dcard">
+            <div class="dhead"><h2>System</h2><a href="system.html"><span data-lang="de">Alle</span><span data-lang="en">See all</span></a></div>
+            <p><span data-lang="de">Diese Website ist statisch. Eine öffentliche Konsolenarchitektur liegt nicht vor.</span><span data-lang="en">This website is static. A public console architecture is not available.</span></p>
+            <a class="pill" href="system.html"><span data-lang="de">System öffnen</span><span data-lang="en">Open system</span></a>
+          </article>
+        </section>
+      </main>
+    </div>
+    <script src="assets/js/site.js"></script>
+  </body>
+</html>
