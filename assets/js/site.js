@@ -56,6 +56,8 @@
       var open = menu.getAttribute("aria-expanded") !== "true";
       menu.setAttribute("aria-expanded", open ? "true" : "false");
       nav.classList.toggle("is-open", open);
+      var shell = document.querySelector(".shell");
+      if (shell) shell.classList.toggle("nav-open", open);
       menu.setAttribute("aria-label", open ? labels[lang()].menuClose : labels[lang()].menuOpen);
     });
   }
