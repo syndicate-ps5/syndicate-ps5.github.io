@@ -361,6 +361,126 @@ ul {
   }
 }
 
+.nav-placeholder {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  padding: 0.35rem 0.8rem;
+  border: 1px dashed var(--line);
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  cursor: default;
+}
+
+.gate {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 1rem 5rem;
+  text-align: center;
+}
+
+.gate-title {
+  margin: 0;
+  color: var(--accent);
+  font-size: clamp(2.2rem, 8vw, 4.6rem);
+  font-weight: 500;
+  letter-spacing: 0.42em;
+  text-indent: 0.42em;
+  line-height: 1;
+}
+
+.gate-sub {
+  margin: 0.8rem 0 0;
+  color: var(--accent-soft);
+  letter-spacing: 0.14em;
+  font-size: 0.85rem;
+}
+
+.gate-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  width: min(16.5rem, 100%);
+  margin-top: 2rem;
+}
+
+.gate-btn {
+  min-height: 2.9rem;
+  border: 1px solid var(--accent);
+  border-radius: 0.75rem;
+  background: transparent;
+  color: var(--accent);
+  font: inherit;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gate-btn:hover {
+  color: var(--accent-soft);
+  border-color: var(--accent-soft);
+}
+
+.gate-note {
+  margin: 0.75rem 0 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.gate-langs {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1.2rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.tile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 0.9rem;
+  margin-top: 1.2rem;
+}
+
+.tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.45rem;
+  min-height: 8.5rem;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.tile:hover {
+  border-color: var(--accent);
+  color: var(--accent-soft);
+}
+
+.tile p {
+  margin: 0;
+}
+
+@media (max-width: 52rem) {
+  .nav-placeholder {
+    width: 100%;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .rain {
     display: none;

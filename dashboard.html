@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de" data-title-de="Home" data-title-en="Home">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home – SYNDICATE</title>
+    <meta name="description" content="Zentrales Dashboard der SYNDICATE Research Division." data-description-de="Zentrales Dashboard der SYNDICATE Research Division." data-description-en="Central dashboard of the SYNDICATE Research Division.">
+    <link rel="icon" href="assets/img/mark.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+      try {
+        var stored = localStorage.getItem("syndicate-lang");
+        if (stored === "en" || stored === "de") {
+          document.documentElement.lang = stored;
+          var earlyMeta = document.querySelector('meta[name="description"]');
+          if (earlyMeta) {
+            var earlyText = earlyMeta.getAttribute(stored === "en" ? "data-description-en" : "data-description-de");
+            if (earlyText) earlyMeta.setAttribute("content", earlyText);
+          }
+        }
+      } catch (error) {}
+    </script>
+  </head>
+  <body>
+    <canvas class="rain" aria-hidden="true"></canvas>
+    <a class="skip" href="#inhalt"><span data-lang="de">Zum Inhalt</span><span data-lang="en">Skip to content</span></a>
+    <header class="top">
+      <div class="top-bar">
+        <a class="brand" href="index.html">
+          <img class="mark" src="assets/img/mark.svg" width="40" height="40" alt="">
+          <span>
+            <span class="word">SYNDICATE</span>
+            <span class="division">Research Division</span>
+          </span>
+        </a>
+        <div class="tools">
+          <button class="menu" type="button" aria-expanded="false" aria-controls="nav"><span data-lang="de">Menü</span><span data-lang="en">Menu</span></button>
+          <div class="langs" role="group">
+            <button class="lang" type="button" data-set-lang="de">DE</button>
+            <button class="lang" type="button" data-set-lang="en">EN</button>
+          </div>
+        </div>
+      </div>
+      <nav id="nav" class="nav" data-current="dashboard.html"><button class="nav-placeholder" type="button" aria-disabled="true"><span data-lang="de">Jailbreak</span><span data-lang="en">Jailbreak</span></button><a href="dashboard.html" aria-current="page"><span data-lang="de">Home</span><span data-lang="en">Home</span></a><a href="research.html"><span data-lang="de">Forschung</span><span data-lang="en">Research</span></a><a href="projects.html"><span data-lang="de">Projekte</span><span data-lang="en">Projects</span></a><a href="development.html"><span data-lang="de">Entwicklung</span><span data-lang="en">Development</span></a><a href="homebrew.html"><span data-lang="de">Homebrew-Store</span><span data-lang="en">Homebrew Store</span></a><a href="system.html"><span data-lang="de">System</span><span data-lang="en">System</span></a><a href="settings.html"><span data-lang="de">Einstellungen</span><span data-lang="en">Settings</span></a></nav>
+    </header>
+    <main class="frame" id="inhalt">
+      <section class="panel">
+        <h1>Home</h1>
+        <p><span data-lang="de">Öffentliche Forschungs- und Dokumentationsseite der SYNDICATE Research Division.</span><span data-lang="en">Public research and documentation site of the SYNDICATE Research Division.</span></p>
+        <p class="note"><span data-lang="de">Diese Dashboard-Fassung liegt zur Prüfung vor. Die veröffentlichte Website bleibt unverändert, bis diese Fassung freigegeben wird.</span><span data-lang="en">This dashboard version is ready for review. The published website stays unchanged until this version is approved.</span></p>
+        <p>
+          <span class="status"><span data-lang="de">Dashboard: Prüfung</span><span data-lang="en">Dashboard: in review</span></span>
+          <span class="status"><span data-lang="de">Forschung: Phase 1</span><span data-lang="en">Research: phase 1</span></span>
+        </p>
+        <div class="tile-grid">
+          <a class="tile" href="research.html"><strong><span data-lang="de">Forschung</span><span data-lang="en">Research</span></strong><p><span data-lang="de">Belegte öffentliche Notizen.</span><span data-lang="en">Sourced public notes.</span></p></a>
+          <a class="tile" href="projects.html"><strong><span data-lang="de">Projekte</span><span data-lang="en">Projects</span></strong><p><span data-lang="de">Vorhandene Bereiche und ihr Status.</span><span data-lang="en">Existing areas and their status.</span></p></a>
+          <a class="tile" href="development.html"><strong><span data-lang="de">Entwicklung</span><span data-lang="en">Development</span></strong><p><span data-lang="de">Geplant. Weitere Phasen sind nicht begonnen.</span><span data-lang="en">Planned. Further phases have not started.</span></p></a>
+          <a class="tile" href="homebrew.html"><strong>Homebrew Store</strong><p><span data-lang="de">Geplant. Keine Angebote und keine Downloads.</span><span data-lang="en">Planned. No listings and no downloads.</span></p></a>
+          <a class="tile" href="system.html"><strong>System</strong><p><span data-lang="de">Aufbau dieser Website. Keine Konsolenarchitektur.</span><span data-lang="en">Structure of this website. No console architecture.</span></p></a>
+          <a class="tile" href="settings.html"><strong><span data-lang="de">Einstellungen</span><span data-lang="en">Settings</span></strong><p><span data-lang="de">Sprache und Hinweise zur Seite.</span><span data-lang="en">Language and notes about the site.</span></p></a>
+        </div>
+        <p class="links">
+          <a href="updates.html"><span data-lang="de">Aktuelles</span><span data-lang="en">Updates</span></a>
+          ·
+          <a href="about.html"><span data-lang="de">Über uns</span><span data-lang="en">About</span></a>
+          ·
+          <a href="https://github.com/syndicate-ps5/syndicate-research" rel="external"><span data-lang="de">Forschungsrepository (extern)</span><span data-lang="en">Research repository (external)</span></a>
+        </p>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <nav id="footnav" class="foot-nav"><a href="index.html"><span data-lang="de">Eingang</span><span data-lang="en">Entry</span></a><a href="dashboard.html"><span data-lang="de">Home</span><span data-lang="en">Home</span></a><a href="research.html"><span data-lang="de">Forschung</span><span data-lang="en">Research</span></a><a href="projects.html"><span data-lang="de">Projekte</span><span data-lang="en">Projects</span></a><a href="development.html"><span data-lang="de">Entwicklung</span><span data-lang="en">Development</span></a><a href="homebrew.html"><span data-lang="de">Homebrew-Store</span><span data-lang="en">Homebrew Store</span></a><a href="system.html"><span data-lang="de">System</span><span data-lang="en">System</span></a><a href="settings.html"><span data-lang="de">Einstellungen</span><span data-lang="en">Settings</span></a><a href="updates.html"><span data-lang="de">Aktuelles</span><span data-lang="en">Updates</span></a><a href="about.html"><span data-lang="de">Über uns</span><span data-lang="en">About</span></a><a href="technology.html"><span data-lang="de">Technik</span><span data-lang="en">Technology</span></a></nav>
+      <p><span data-lang="de">Diese Website enthält keine Downloads und keine Releases.</span><span data-lang="en">This website contains no downloads and no releases.</span></p>
+      <p><span data-lang="de">Quelltext dieser Seite:</span><span data-lang="en">Source of this site:</span> <a href="https://github.com/syndicate-ps5/syndicate-ps5.github.io" rel="external"><span class="repo-part">syndicate-ps5</span>/<wbr><span class="repo-part">syndicate-ps5.github.io</span> <span data-lang="de">(extern)</span><span data-lang="en">(external)</span></a></p>
+      <p><span data-lang="de">Öffentliche Forschung:</span><span data-lang="en">Public research:</span> <a href="https://github.com/syndicate-ps5/syndicate-research" rel="external"><span data-lang="de">syndicate-research (extern)</span><span data-lang="en">syndicate-research (external)</span></a></p>
+    </footer>
+    <script src="assets/js/site.js"></script>
+  </body>
+</html>

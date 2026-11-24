@@ -30,6 +30,8 @@
     }
     var nav = document.getElementById("nav");
     if (nav) nav.setAttribute("aria-label", labels[choice].nav);
+    var gate = document.getElementById("gate-nav");
+    if (gate) gate.setAttribute("aria-label", gate.getAttribute(choice === "en" ? "data-label-en" : "data-label-de"));
     var foot = document.getElementById("footnav");
     if (foot) foot.setAttribute("aria-label", labels[choice].foot);
     var group = document.querySelector(".langs");

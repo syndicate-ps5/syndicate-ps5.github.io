@@ -2,11 +2,11 @@
 
 ## Zweck
 
-Dieses Repository enthält die öffentliche, statische Website der SYNDICATE Research Division. GitHub Pages liefert den Branch `main` ohne eigenen Build-Schritt aus. Die mehrseitige Fassung liegt zur Prüfung vor und ersetzt `main` erst nach Freigabe.
+Dieses Repository enthält die öffentliche, statische Website der SYNDICATE Research Division. GitHub Pages liefert den Branch `main` ohne eigenen Build-Schritt aus. Die Dashboard-Fassung liegt zur Prüfung vor und ersetzt `main` erst nach Freigabe.
 
 ## Seiten
 
-Start stellt das Projekt vor. Forschung nennt die veröffentlichte Phase 1 und die belegte Modellgruppen-Notiz. Projekte zeigt den öffentlichen Status der vorhandenen Bereiche und kennzeichnet leere Bereiche als geplant. Technik beschreibt nur diese Website. Über uns nennt die Research Division, die Trennung von öffentlicher Forschung und interner Entwicklung und die Veröffentlichungsregel. Aktuelles führt die öffentlichen Schritte auf.
+`index.html` ist der Eingang: SYNDICATE, darunter Jailbreak ohne Funktion, darunter Home. Home öffnet `dashboard.html` mit den Kacheln Forschung, Projekte, Entwicklung, Homebrew-Store, System und Einstellungen. Die bisherigen Seiten zu Forschung, Projekten, Technik, Über uns und Aktuelles bleiben erhalten und sind aus dem Dashboard erreichbar.
 
 Deutsch und Englisch stehen in jeder Seite. Ohne gespeicherte Wahl bleibt Deutsch sichtbar. Die Wahl liegt lokal im Browser.
 
