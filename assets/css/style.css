@@ -481,8 +481,48 @@ ul {
   }
 }
 
-body.dash .rain {
+body.dash .rain,
+html.rain-off .rain {
   display: none;
+}
+
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.8rem;
+}
+
+.search-form label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.search-form input {
+  flex: 1 1 12rem;
+  min-height: 2.75rem;
+  padding: 0.4rem 0.7rem;
+  border: 1px solid var(--accent);
+  border-radius: 0.55rem;
+  background: #030303;
+  color: var(--text);
+  font: inherit;
+}
+
+.search-results {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+}
+
+.search-results a {
+  display: block;
+  min-height: 2.75rem;
+  padding: 0.55rem 0;
+  border-top: 1px solid var(--line);
 }
 
 .shell {

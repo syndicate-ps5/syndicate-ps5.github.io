@@ -19,6 +19,16 @@
     document.querySelectorAll("[data-set-lang]").forEach(function (button) {
       button.setAttribute("aria-pressed", button.getAttribute("data-set-lang") === choice ? "true" : "false");
     });
+    var rain = "on";
+    try {
+      rain = localStorage.getItem("syndicate-rain") === "off" ? "off" : "on";
+    } catch (error) {
+      rain = "on";
+    }
+    document.documentElement.classList.toggle("rain-off", rain === "off");
+    document.querySelectorAll("[data-set-rain]").forEach(function (button) {
+      button.setAttribute("aria-pressed", button.getAttribute("data-set-rain") === rain ? "true" : "false");
+    });
     var titleDe = document.documentElement.getAttribute("data-title-de");
     var titleEn = document.documentElement.getAttribute("data-title-en");
     if (titleDe && titleEn) document.title = (choice === "en" ? titleEn : titleDe) + " – SYNDICATE";
@@ -46,6 +56,17 @@
   document.querySelectorAll("[data-set-lang]").forEach(function (button) {
     button.addEventListener("click", function () {
       apply(button.getAttribute("data-set-lang"));
+    });
+  });
+
+  document.querySelectorAll("[data-set-rain]").forEach(function (button) {
+    button.addEventListener("click", function () {
+      try {
+        localStorage.setItem("syndicate-rain", button.getAttribute("data-set-rain"));
+      } catch (error) {
+        /* the choice still applies to this view */
+      }
+      apply(lang());
     });
   });
 
