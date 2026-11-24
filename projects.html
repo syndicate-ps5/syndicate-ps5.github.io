@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de" data-title-de="Projekte" data-title-en="Projects">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projekte – SYNDICATE</title>
+    <meta name="description" content="Projektmodule der SYNDICATE Research Division und ihr öffentlicher Status.">
+    <link rel="icon" href="assets/img/mark.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+      try {
+        var stored = localStorage.getItem("syndicate-lang");
+        if (stored === "en" || stored === "de") document.documentElement.lang = stored;
+      } catch (error) {}
+    </script>
+  </head>
+  <body>
+    <canvas class="rain" aria-hidden="true"></canvas>
+    <a class="skip" href="#inhalt"><span data-lang="de">Zum Inhalt</span><span data-lang="en">Skip to content</span></a>
+    <header class="top">
+      <div class="top-bar">
+        <a class="brand" href="index.html">
+          <img class="mark" src="assets/img/mark.svg" width="40" height="40" alt="">
+          <span>
+            <span class="word">SYNDICATE</span>
+            <span class="division">Research Division</span>
+          </span>
+        </a>
+        <div class="tools">
+          <button class="menu" type="button" aria-expanded="false" aria-controls="nav"><span data-lang="de">Menü</span><span data-lang="en">Menu</span></button>
+          <div class="langs" role="group">
+            <button class="lang" type="button" data-set-lang="de">DE</button>
+            <button class="lang" type="button" data-set-lang="en">EN</button>
+          </div>
+        </div>
+      </div>
+      <nav id="nav" class="nav">
+        <a href="index.html"><span data-lang="de">Start</span><span data-lang="en">Home</span></a><a href="research.html"><span data-lang="de">Forschung</span><span data-lang="en">Research</span></a><a href="projects.html" aria-current="page"><span data-lang="de">Projekte</span><span data-lang="en">Projects</span></a><a href="technology.html"><span data-lang="de">Technik</span><span data-lang="en">Technology</span></a><a href="about.html"><span data-lang="de">Über uns</span><span data-lang="en">About</span></a><a href="updates.html"><span data-lang="de">Aktuelles</span><span data-lang="en">Updates</span></a>
+      </nav>
+    </header>
+    <main class="frame" id="inhalt">
+      <section class="panel">
+        <h1><span data-lang="de">Projekte</span><span data-lang="en">Projects</span></h1>
+        
+        <p><span data-lang="de">Ein Modul gilt hier nur so weit als vorhanden, wie es im öffentlichen Repository oder auf der veröffentlichten Website liegt. Geplante Module sind gekennzeichnet.</span><span data-lang="en">A module is treated as present here only as far as it exists in the public repository or on the published website. Planned modules are marked.</span></p>
+        <div class="grid">
+          <article class="card">
+            <h2><span data-lang="de">Öffentliche Website</span><span data-lang="en">Public website</span></h2>
+            <p><span class="status"><span data-lang="de">Einseitige Fassung veröffentlicht</span><span data-lang="en">One-page version published</span></span></p>
+            <p><span data-lang="de">Die bisherige Startseite ist öffentlich. Diese mehrseitige Fassung wartet auf Freigabe und ist noch nicht die veröffentlichte Seite.</span><span data-lang="en">The existing home page is public. This multi-page version is waiting for approval and is not the published page yet.</span></p>
+          </article>
+          <article class="card">
+            <h2><span data-lang="de">Forschungsrepository</span><span data-lang="en">Research repository</span></h2>
+            <p><span class="status"><span data-lang="de">Phase 1 veröffentlicht</span><span data-lang="en">Phase 1 published</span></span></p>
+            <p><span data-lang="de">Veröffentlicht sind Arbeitsregeln, Statusbegriffe und die Modellgruppen-Notiz. Weitere Forschungsphasen sind nicht begonnen.</span><span data-lang="en">Published material is the working rules, status terms, and the model-group note. Further research phases have not started.</span></p>
+          </article>
+          <article class="card">
+            <h2><span data-lang="de">Modellgruppen</span><span data-lang="en">Model groups</span></h2>
+            <p><span class="status"><span data-lang="de">Eine Quelle dokumentiert</span><span data-lang="en">One source documented</span></span></p>
+            <p><span data-lang="de">Belegt ist nur der in der Forschung genannte Umfang der USB-Ports-Anleitung. Original, Slim und Pro bleiben Unknown.</span><span data-lang="en">Only the scope of the USB ports guide cited in the research note is documented. Original, Slim, and Pro remain Unknown.</span></p>
+          </article>
+          <article class="card">
+            <h2><span data-lang="de">Firmware-Notizen</span><span data-lang="en">Firmware notes</span></h2>
+            <p><span class="status planned"><span data-lang="de">Geplant</span><span data-lang="en">Planned</span></span></p>
+            <p><span data-lang="de">Der Ordner ist angelegt. Es gibt keine Firmware-Einträge.</span><span data-lang="en">The folder exists. There are no firmware entries.</span></p>
+          </article>
+          <article class="card">
+            <h2><span data-lang="de">Architektur-Notizen</span><span data-lang="en">Architecture notes</span></h2>
+            <p><span class="status planned"><span data-lang="de">Geplant</span><span data-lang="en">Planned</span></span></p>
+            <p><span data-lang="de">Der Ordner nennt mögliche Themenfelder. Es gibt keine Architekturaussagen.</span><span data-lang="en">The folder names possible topic fields. There are no architecture statements.</span></p>
+          </article>
+          <article class="card">
+            <h2><span data-lang="de">Weitere Phasen</span><span data-lang="en">Further phases</span></h2>
+            <p><span class="status planned"><span data-lang="de">Nicht begonnen</span><span data-lang="en">Not started</span></span></p>
+            <p><span data-lang="de">Das öffentliche Repository sagt, dass weitere Forschungsphasen nicht begonnen sind.</span><span data-lang="en">The public repository states that further research phases have not started.</span></p>
+          </article>
+        </div>
+    
+      </section>
+    </main>
+    <footer class="site-footer">
+      <nav id="footnav" class="foot-nav"><a href="index.html"><span data-lang="de">Start</span><span data-lang="en">Home</span></a><a href="research.html"><span data-lang="de">Forschung</span><span data-lang="en">Research</span></a><a href="projects.html"><span data-lang="de">Projekte</span><span data-lang="en">Projects</span></a><a href="technology.html"><span data-lang="de">Technik</span><span data-lang="en">Technology</span></a><a href="about.html"><span data-lang="de">Über uns</span><span data-lang="en">About</span></a><a href="updates.html"><span data-lang="de">Aktuelles</span><span data-lang="en">Updates</span></a></nav>
+      <p><span data-lang="de">Diese Website enthält keine Downloads und keine Releases.</span><span data-lang="en">This website contains no downloads and no releases.</span></p>
+      <p><span data-lang="de">Quelltext dieser Seite:</span><span data-lang="en">Source of this site:</span> <a href="https://github.com/syndicate-ps5/syndicate-ps5.github.io" rel="external"><span class="repo-part">syndicate-ps5</span>/<wbr><span class="repo-part">syndicate-ps5.github.io</span> <span data-lang="de">(extern)</span><span data-lang="en">(external)</span></a></p>
+      <p><span data-lang="de">Öffentliche Forschung:</span><span data-lang="en">Public research:</span> <a href="https://github.com/syndicate-ps5/syndicate-research" rel="external"><span data-lang="de">syndicate-research (extern)</span><span data-lang="en">syndicate-research (external)</span></a></p>
+    </footer>
+    <script src="assets/js/site.js"></script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de" data-title-de="Über uns" data-title-en="About">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Über uns – SYNDICATE</title>
+    <meta name="description" content="SYNDICATE Research Division. Öffentliche Forschung und Dokumentation.">
+    <link rel="icon" href="assets/img/mark.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+      try {
+        var stored = localStorage.getItem("syndicate-lang");
+        if (stored === "en" || stored === "de") document.documentElement.lang = stored;
+      } catch (error) {}
+    </script>
+  </head>
+  <body>
+    <canvas class="rain" aria-hidden="true"></canvas>
+    <a class="skip" href="#inhalt"><span data-lang="de">Zum Inhalt</span><span data-lang="en">Skip to content</span></a>
+    <header class="top">
+      <div class="top-bar">
+        <a class="brand" href="index.html">
+          <img class="mark" src="assets/img/mark.svg" width="40" height="40" alt="">
+          <span>
+            <span class="word">SYNDICATE</span>
+            <span class="division">Research Division</span>
+          </span>
+        </a>
+        <div class="tools">
+          <button class="menu" type="button" aria-expanded="false" aria-controls="nav"><span data-lang="de">Menü</span><span data-lang="en">Menu</span></button>
+          <div class="langs" role="group">
+            <button class="lang" type="button" data-set-lang="de">DE</button>
+            <button class="lang" type="button" data-set-lang="en">EN</button>
+          </div>
+        </div>
+      </div>
+      <nav id="nav" class="nav">
+        <a href="index.html"><span data-lang="de">Start</span><span data-lang="en">Home</span></a><a href="research.html"><span data-lang="de">Forschung</span><span data-lang="en">Research</span></a><a href="projects.html"><span data-lang="de">Projekte</span><span data-lang="en">Projects</span></a><a href="technology.html"><span data-lang="de">Technik</span><span data-lang="en">Technology</span></a><a href="about.html" aria-current="page"><span data-lang="de">Über uns</span><span data-lang="en">About</span></a><a href="updates.html"><span data-lang="de">Aktuelles</span><span data-lang="en">Updates</span></a>
+      </nav>
+    </header>
+    <main class="frame" id="inhalt">
+      <section class="panel">
+        <h1><span data-lang="de">Über uns</span><span data-lang="en">About</span></h1>
+        
+        <p><span data-lang="de">Die SYNDICATE Research Division führt die öffentliche Forschung und Dokumentation des Projekts SYNDICATE.</span><span data-lang="en">The SYNDICATE Research Division carries the public research and documentation of the SYNDICATE project.</span></p>
+        <p><span data-lang="de">Leitsatz: Understand. Research. Develop. Document.</span><span data-lang="en">Motto: Understand. Research. Develop. Document.</span></p>
+        <h2><span data-lang="de">Abgrenzung</span><span data-lang="en">Separation</span></h2>
+        <p><span data-lang="de">Öffentliche Forschung und interne Entwicklung werden getrennt verwaltet. Dieses Repository der Website und das öffentliche Forschungsrepository enthalten nur freigegebene öffentliche Inhalte.</span><span data-lang="en">Public research and internal development are managed separately. This website repository and the public research repository contain only approved public material.</span></p>
+        <h2><span data-lang="de">Veröffentlichungsregel</span><span data-lang="en">Publication rule</span></h2>
+        <p><span data-lang="de">Forschungsergebnisse werden erst nach Quellenprüfung, Bewertung der Beleglage und Freigabe veröffentlicht. Eine umgesetzte Notiz ist dadurch nicht automatisch verifiziert.</span><span data-lang="en">Research results are published only after a source check, an evidence assessment, and approval. An implemented note is not automatically verified.</span></p>
+        <h2><span data-lang="de">Was diese Website nicht ist</span><span data-lang="en">What this website is not</span></h2>
+        <p><span data-lang="de">Sie ist keine Produktseite, enthält keine Downloads und kündigt keine verfügbaren Konsolenfunktionen an. Geplante Arbeit bleibt als geplant gekennzeichnet.</span><span data-lang="en">It is not a product page, it contains no downloads, and it does not announce console features as available. Planned work stays marked as planned.</span></p>
+    
+      </section>
+    </main>
+    <footer class="site-footer">
+      <nav id="footnav" class="foot-nav"><a href="index.html"><span data-lang="de">Start</span><span data-lang="en">Home</span></a><a href="research.html"><span data-lang="de">Forschung</span><span data-lang="en">Research</span></a><a href="projects.html"><span data-lang="de">Projekte</span><span data-lang="en">Projects</span></a><a href="technology.html"><span data-lang="de">Technik</span><span data-lang="en">Technology</span></a><a href="about.html"><span data-lang="de">Über uns</span><span data-lang="en">About</span></a><a href="updates.html"><span data-lang="de">Aktuelles</span><span data-lang="en">Updates</span></a></nav>
+      <p><span data-lang="de">Diese Website enthält keine Downloads und keine Releases.</span><span data-lang="en">This website contains no downloads and no releases.</span></p>
+      <p><span data-lang="de">Quelltext dieser Seite:</span><span data-lang="en">Source of this site:</span> <a href="https://github.com/syndicate-ps5/syndicate-ps5.github.io" rel="external"><span class="repo-part">syndicate-ps5</span>/<wbr><span class="repo-part">syndicate-ps5.github.io</span> <span data-lang="de">(extern)</span><span data-lang="en">(external)</span></a></p>
+      <p><span data-lang="de">Öffentliche Forschung:</span><span data-lang="en">Public research:</span> <a href="https://github.com/syndicate-ps5/syndicate-research" rel="external"><span data-lang="de">syndicate-research (extern)</span><span data-lang="en">syndicate-research (external)</span></a></p>
+    </footer>
+    <script src="assets/js/site.js"></script>
+  </body>
+</html>

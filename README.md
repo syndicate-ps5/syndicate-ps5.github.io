@@ -1,33 +1,23 @@
 # SYNDICATE
 
-Öffentliche Website des Forschungs- und Dokumentationsprojekts SYNDICATE.
+Öffentliche Website der SYNDICATE Research Division.
 
-Die Seite ist statisch und liegt für GitHub Pages direkt in diesem Repository. Ein Build-Schritt ist nicht vorgesehen. Die Datei `.nojekyll` weist GitHub Pages an, die Dateien unverändert auszuliefern.
+Die veröffentlichte Fassung auf `main` bleibt die einseitige Startseite, bis die mehrseitige Fassung freigegeben ist. Diese Branch enthält die mehrseitige Prüfung: Start, Forschung, Projekte, Technik, Über uns und Aktuelles.
 
-**Status:** In Aufbau (Phase 1)
+Die Seiten sind statisch. Ein Build-Schritt ist nicht vorgesehen. `.nojekyll` hält GitHub Pages davon ab, Jekyll zu verwenden. Deutsch ist die Ausgangssprache. Englisch schaltet ein lokales Skript um.
 
-Öffentliches Forschungsrepository: <https://github.com/syndicate-ps5/syndicate-research>
-
-## Struktur
-
-```text
-index.html
-assets/css/style.css
-assets/img/mark.svg
-docs/website.md
-README.md
-.gitignore
-.nojekyll
-```
+Öffentliche Forschung: <https://github.com/syndicate-ps5/syndicate-research>
 
 ## Lokal ansehen
-
-Die Datei `index.html` im Repository-Root im Browser öffnen. Alternativ im Repository-Root einen lokalen Webserver starten und `http://127.0.0.1:8000/` aufrufen:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-## Grenzen dieser Phase
+Danach ist die Startseite unter `http://127.0.0.1:8000/` erreichbar.
 
-Diese Phase enthält keine Downloads, keine Veröffentlichungen und keine Ankündigung weiterer Funktionen. Die Gestaltung und die inhaltlichen Grenzen sind in [docs/website.md](docs/website.md) beschrieben.
+## Grenzen
+
+Die Texte verwenden nur den auf `main` des Forschungsrepositories veröffentlichten Stand. Weitere Phasen sind nicht begonnen. Original, Slim und Pro bleiben Unknown. Es gibt keine Downloads und keine Releases. Private Repositorys werden nicht genannt.
+
+Die Gestaltung und die Seitenliste stehen in [docs/website.md](docs/website.md).
